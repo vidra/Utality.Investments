@@ -1,6 +1,6 @@
 
 
-body {
+html, body {
     height:100%;
     width:100%;
     /* остальные стили  */
@@ -15,7 +15,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: inherit;
 }
 
 .text {
@@ -28,6 +27,9 @@ body {
   background:#000;
   width: 100%;
   color: #fff;
+}
+.footer .p{
+  margin-left:5px;
 }
 
 .header{
@@ -80,8 +82,8 @@ a:hover {
 }
 
 .form{
-   width: 25%;
-   margin-top:40px;
+  width: 25%;
+  margin-top:40px;
 }
 
 .left{
@@ -117,14 +119,28 @@ a:hover {
     width:30%;
 }
 @media (min-width: 576px){
-    #cookie_note.show{
-        display: flex;
+#cookie_note.show{
+    display: flex;
     }
 }
 
 @media (max-width: 575px){
-    #cookie_note.show{
-        display: block;
-        text-align: left;
+#cookie_note.show{
+    display: block;
+    text-align: left;
     }
+}
+
+.page-footer {
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+.page-footer.fixed-bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
 }
